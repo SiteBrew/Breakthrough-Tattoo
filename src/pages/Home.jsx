@@ -191,35 +191,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ── LOGO COLLAGE — desktop only ── */}
-        <div className="hidden lg:block">
-          {/* Oni demon — left edge, tall */}
-          <div className="absolute top-20 left-4 w-48 xl:w-64 pointer-events-none select-none animate-fade-in delay-500"
-               style={{ opacity: 0.18, transform: 'rotate(-10deg)' }}>
-            <img src="/logos/logo-oni.png" alt="" className="w-full h-auto drop-shadow-[0_0_30px_rgba(201,168,76,0.3)]" />
-          </div>
-          {/* Cat demon — right edge, top */}
-          <div className="absolute top-20 right-4 w-40 xl:w-52 pointer-events-none select-none animate-fade-in delay-500"
-               style={{ opacity: 0.18, transform: 'rotate(9deg)', animationDelay: '0.6s' }}>
-            <img src="/logos/logo-cat.png" alt="" className="w-full h-auto drop-shadow-[0_0_20px_rgba(201,168,76,0.25)]" />
-          </div>
-          {/* Skull — bottom left */}
-          <div className="absolute bottom-28 left-12 w-32 xl:w-40 pointer-events-none select-none animate-fade-in"
-               style={{ opacity: 0.15, transform: 'rotate(7deg)', animationDelay: '0.7s' }}>
-            <img src="/logos/logo-skull.png" alt="" className="w-full h-auto drop-shadow-[0_0_20px_rgba(201,168,76,0.2)]" />
-          </div>
-          {/* Main horizontal logo — bottom right */}
-          <div className="absolute bottom-20 right-8 w-48 xl:w-60 pointer-events-none select-none animate-fade-in delay-500"
-               style={{ opacity: 0.18, transform: 'rotate(-5deg)' }}>
-            <img src="/logos/logo-main.png" alt="" className="w-full h-auto drop-shadow-[0_0_25px_rgba(201,168,76,0.3)]" />
-          </div>
-          {/* B monogram — lower left accent */}
-          <div className="absolute bottom-10 left-1/4 w-16 xl:w-20 pointer-events-none select-none animate-fade-in"
-               style={{ opacity: 0.12, transform: 'rotate(-8deg)', animationDelay: '0.8s' }}>
-            <img src="/logos/logo-b.png" alt="" className="w-full h-auto drop-shadow-[0_0_15px_rgba(201,168,76,0.3)]" />
-          </div>
-        </div>
-
       </section>
 
       {/* ── ABOUT STRIP ── */}
