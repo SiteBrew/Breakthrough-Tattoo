@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      PRERENDER_HEAD is replaced at build time by scripts/prerender.mjs with
+      this route's own title, description, canonical, Open Graph and Twitter
+      tags. Crawlers and social scrapers do not run JavaScript, and SEOHead
+      only sets these in a useEffect, so without this every route served the
+      homepage's metadata.
+
+      The FALLBACK block below is used only for routes that are not
+      prerendered; the build strips it from the ones that are.
+    -->
+    <!--PRERENDER_HEAD-->
+
+    <!--FALLBACK_START-->
+    <!-- Primary SEO Meta Tags -->
+    <title>Breakthrough Tattoo | Premier Custom Tattoo Studio in North Charleston, SC</title>
+    <meta name="description" content="Breakthrough Tattoo is North Charleston's premier custom tattoo studio at 3025 Ashley Phosphate Road. Expert artists specializing in custom, traditional, realism, fine line tattoos & more. Book your appointment today." />
+    <meta name="keywords" content="tattoo studio North Charleston SC, custom tattoo Charleston, tattoo artist Charleston SC, best tattoo shop Charleston, tattoo near me, traditional tattoo, realism tattoo, fine line tattoo" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Breakthrough Tattoo" />
+    <link rel="canonical" href="https://www.breakthroughcharleston.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.breakthroughcharleston.com/" />
+    <meta property="og:title" content="Breakthrough Tattoo | Premier Custom Tattoo Studio in North Charleston, SC" />
+    <meta property="og:description" content="North Charleston's premier custom tattoo studio. Expert artists specializing in custom tattoos, traditional, realism, fine line, and more. 3025 Ashley Phosphate Road." />
+    <meta property="og:image" content="https://www.breakthroughcharleston.com/og-image.jpg" />
+    <meta property="og:site_name" content="Breakthrough Tattoo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Breakthrough Tattoo | Premier Custom Tattoo Studio in North Charleston, SC" />
+    <meta name="twitter:description" content="North Charleston's premier custom tattoo studio. Expert artists specializing in custom tattoos, traditional, realism, fine line, and more." />
+    <meta name="twitter:image" content="https://www.breakthroughcharleston.com/og-image.jpg" />
+
+    <!--FALLBACK_END-->
+
+    <!-- Local Business Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TattooParlor",
+      "name": "Breakthrough Tattoo",
+      "description": "North Charleston's premier custom tattoo studio with expert artists specializing in custom tattoos, traditional, realism, and fine line work.",
+      "url": "https://www.breakthroughcharleston.com",
+      "telephone": "(843) 725-9119",
+      "email": "breakthroughtattoo.sc@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3025 Ashley Phosphate Rd, Unit B1",
+        "addressLocality": "North Charleston",
+        "addressRegion": "SC",
+        "postalCode": "29418",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.9274,
+        "longitude": -80.0626
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "11:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday","Saturday"],
+          "opens": "11:00",
+          "closes": "21:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "13:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/breakthroughtattoo_charleston/",
+        "https://www.facebook.com/breakthroughtattoochs/"
+      ],
+      "priceRange": "$$",
+      "hasMap": "https://maps.google.com/?q=3025+Ashley+Phosphate+Road+North+Charleston+SC+29418"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
