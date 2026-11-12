@@ -38,7 +38,7 @@ export default function Navbar() {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <div className="w-10 h-10 shrink-0 bg-white rounded-sm overflow-hidden">
-                <img src="/logos/logo-b.jpeg" alt="Breakthrough Tattoo monogram" className="w-full h-full object-cover" />
+                <img src="/logos/logo-b.webp" alt="Breakthrough Tattoo monogram" width="128" height="150" className="w-full h-full object-cover" />
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="font-accent text-lg tracking-[0.2em] text-white uppercase group-hover:text-brand-gold transition-colors duration-300">

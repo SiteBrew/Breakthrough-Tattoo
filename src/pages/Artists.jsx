@@ -84,11 +84,7 @@ export default function Artists() {
 
   return (
     <>
-      <SEOHead
-        title="Our Tattoo Artists"
-        description="Meet the talented artists at Breakthrough Tattoo in North Charleston, SC. Specializing in custom, traditional, realism, fine line, neo-traditional, and cover-up tattoos."
-        canonical="https://www.breakthroughcharleston.com/artists"
-      />
+      <SEOHead />
 
       {/* Page Header */}
       <section className="pt-40 pb-20 bg-brand-dark relative overflow-hidden">

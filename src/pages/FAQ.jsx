@@ -156,11 +156,7 @@ export default function FAQ() {
 
   return (
     <>
-      <SEOHead
-        title="FAQ – Frequently Asked Questions"
-        description="Answers to common questions about getting a tattoo at Breakthrough Tattoo in North Charleston, SC — booking, pricing, aftercare, cover-ups, and more."
-        canonical="https://www.breakthroughcharleston.com/faq"
-      />
+      <SEOHead />
 
       {/* FAQ Schema */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -207,11 +203,23 @@ export default function FAQ() {
                         </h3>
                         <span className={`text-brand-gold text-xl shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>+</span>
                       </button>
-                      {isOpen && (
-                        <div className="px-6 pb-6 border-t border-brand-border pt-4">
-                          <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+                      {/*
+                        Always render the answer and collapse it with CSS rather
+                        than unmounting it. Conditional mounting kept every answer
+                        out of the prerendered HTML, so crawlers saw the questions
+                        and none of the ~900 words that answer them. The 0fr/1fr
+                        grid row animates height without a measured pixel value.
+                      */}
+                      <div
+                        className="overflow-hidden transition-all duration-300"
+                        style={{ display: 'grid', gridTemplateRows: isOpen ? '1fr' : '0fr' }}
+                      >
+                        <div className="min-h-0 overflow-hidden">
+                          <div className="px-6 pb-6 border-t border-brand-border pt-4">
+                            <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+                          </div>
                         </div>
-                      )}
+                      </div>
                     </div>
                   )
                 })}

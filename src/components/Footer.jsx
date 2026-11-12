@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="mb-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-12 h-12 shrink-0 bg-white rounded-sm overflow-hidden">
-                  <img src="/logos/logo-b.jpeg" alt="Breakthrough Tattoo" className="w-full h-full object-cover" />
+                  <img src="/logos/logo-b.webp" alt="Breakthrough Tattoo" width="128" height="150" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <span className="font-accent text-xl tracking-[0.2em] text-white uppercase block leading-tight">

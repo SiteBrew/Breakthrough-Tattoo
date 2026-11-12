@@ -30,11 +30,7 @@ const sitePages = [
 export default function Sitemap() {
   return (
     <>
-      <SEOHead
-        title="Sitemap"
-        description="Full sitemap for Breakthrough Tattoo — North Charleston's premier custom tattoo studio."
-        canonical="https://www.breakthroughcharleston.com/sitemap"
-      />
+      <SEOHead />
 
       <section className="pt-40 pb-20 bg-brand-dark">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">

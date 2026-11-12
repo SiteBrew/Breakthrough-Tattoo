@@ -115,11 +115,7 @@ export default function Book() {
 
   return (
     <>
-      <SEOHead
-        title="Book an Appointment"
-        description="Book your tattoo consultation at Breakthrough Tattoo in North Charleston, SC. Request an appointment with our expert artists online."
-        canonical="https://www.breakthroughcharleston.com/book"
-      />
+      <SEOHead />
 
       {/* Header */}
       <section className="pt-40 pb-16 bg-brand-dark">
