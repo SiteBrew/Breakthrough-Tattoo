@@ -3,11 +3,7 @@ import SEOHead from '../components/SEOHead'
 export default function Privacy() {
   return (
     <>
-      <SEOHead
-        title="Privacy Policy"
-        description="Privacy Policy for Breakthrough Tattoo in North Charleston, SC. Learn how we collect, use, and protect your personal information."
-        canonical="https://www.breakthroughcharleston.com/privacy"
-      />
+      <SEOHead />
 
       <section className="pt-40 pb-20 bg-brand-dark">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">

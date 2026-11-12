@@ -80,11 +80,7 @@ export default function Services() {
 
   return (
     <>
-      <SEOHead
-        title="Tattoo Services"
-        description="Explore Breakthrough Tattoo's full range of services in North Charleston, SC — custom tattoos, traditional, realism, fine line, neo-traditional, cover-ups, and more."
-        canonical="https://www.breakthroughcharleston.com/services"
-      />
+      <SEOHead />
 
       {/* Header */}
       <section className="pt-40 pb-20 bg-brand-dark relative overflow-hidden">

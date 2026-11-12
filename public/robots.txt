@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.breakthroughcharleston.com/sitemap.xml
+Sitemap: https://breakthroughcharleston.com/sitemap.xml

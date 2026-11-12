@@ -43,11 +43,7 @@ export default function Contact() {
 
   return (
     <>
-      <SEOHead
-        title="Contact Us"
-        description="Contact Breakthrough Tattoo in North Charleston, SC. Located at 3025 Ashley Phosphate Road. Call (843) 725-9119 or send us a message."
-        canonical="https://www.breakthroughcharleston.com/contact"
-      />
+      <SEOHead />
 
       {/* Header */}
       <section className="pt-40 pb-20 bg-brand-dark relative overflow-hidden">

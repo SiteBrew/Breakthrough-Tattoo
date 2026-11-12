@@ -148,11 +148,7 @@ export default function Gallery() {
 
   return (
     <>
-      <SEOHead
-        title="Tattoo Gallery"
-        description="Browse real tattoo work from Breakthrough Tattoo artists in North Charleston, SC — custom, traditional, realism, fine line, Japanese, and more. Live from our Instagram."
-        canonical="https://www.breakthroughcharleston.com/gallery"
-      />
+      <SEOHead />
 
       {/* ── HEADER ── */}
       <section className="pt-40 pb-20 bg-brand-dark relative overflow-hidden">

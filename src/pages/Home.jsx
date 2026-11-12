@@ -115,11 +115,7 @@ export default function Home() {
 
   return (
     <>
-      <SEOHead
-        title="Premier Custom Tattoo Studio"
-        description="Breakthrough Tattoo is the first and oldest tattoo studio in North Charleston, SC. Expert artists specializing in custom, traditional, realism, and fine line tattoos. Book your consultation today."
-        canonical="https://www.breakthroughcharleston.com/"
-      />
+      <SEOHead />
 
       {/* ── HERO ── */}
       <section

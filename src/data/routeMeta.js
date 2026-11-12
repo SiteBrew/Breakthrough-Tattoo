@@ -12,32 +12,32 @@
  * so what the prerender writes matches what the client sets.
  */
 
-export const SITE = 'https://www.breakthroughcharleston.com';
+export const SITE = 'https://breakthroughcharleston.com';
 export const DEFAULT_OG_IMAGE = `${SITE}/og-image.jpg`;
 
 export const routeMeta = {
   '/': {
-    title: 'Premier Custom Tattoo Studio | Breakthrough Tattoo \u2013 North Charleston, SC',
+    title: 'Custom Tattoo Studio in North Charleston, SC | Breakthrough',
     description:
-      'Breakthrough Tattoo is the first and oldest tattoo studio in North Charleston, SC. Expert artists specializing in custom, traditional, realism, and fine line tattoos. Book your consultation today.',
+      'Breakthrough Tattoo is the first and oldest tattoo studio in North Charleston, SC. Custom, traditional, realism and fine line work by expert artists.',
   },
   '/artists': {
-    title: 'Our Tattoo Artists | Breakthrough Tattoo \u2013 North Charleston, SC',
+    title: 'Tattoo Artists in North Charleston, SC | Breakthrough',
     description:
-      'Meet the talented artists at Breakthrough Tattoo in North Charleston, SC. Specializing in custom, traditional, realism, fine line, neo-traditional, and cover-up tattoos.',
+      'Meet the artists at Breakthrough Tattoo in North Charleston, SC — custom, traditional, realism, fine line, neo-traditional and cover-up work.',
   },
   '/services': {
     title: 'Tattoo Services | Breakthrough Tattoo \u2013 North Charleston, SC',
     description:
-      'Explore Breakthrough Tattoo\'s full range of services in North Charleston, SC — custom tattoos, traditional, realism, fine line, neo-traditional, cover-ups, and more.',
+      'Breakthrough Tattoo\'s full range of services in North Charleston, SC — custom tattoos, traditional, realism, fine line, neo-traditional and cover-ups.',
   },
   '/gallery': {
     title: 'Tattoo Gallery | Breakthrough Tattoo \u2013 North Charleston, SC',
     description:
-      'Browse real tattoo work from Breakthrough Tattoo artists in North Charleston, SC — custom, traditional, realism, fine line, Japanese, and more. Live from our Instagram.',
+      'Browse real tattoo work from Breakthrough Tattoo artists in North Charleston, SC — custom, traditional, realism, fine line and Japanese styles.',
   },
   '/book': {
-    title: 'Book an Appointment | Breakthrough Tattoo \u2013 North Charleston, SC',
+    title: 'Book a Tattoo Appointment in North Charleston, SC',
     description:
       'Book your tattoo consultation at Breakthrough Tattoo in North Charleston, SC. Request an appointment with our expert artists online.',
   },
@@ -47,7 +47,7 @@ export const routeMeta = {
       'Contact Breakthrough Tattoo in North Charleston, SC. Located at 3025 Ashley Phosphate Road. Call (843) 725-9119 or send us a message.',
   },
   '/faq': {
-    title: 'FAQ – Frequently Asked Questions | Breakthrough Tattoo \u2013 North Charleston, SC',
+    title: 'Tattoo FAQ | Breakthrough Tattoo, North Charleston SC',
     description:
       'Answers to common questions about getting a tattoo at Breakthrough Tattoo in North Charleston, SC — booking, pricing, aftercare, cover-ups, and more.',
   },
