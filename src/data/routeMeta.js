@@ -60,7 +60,7 @@ export const routeMeta = {
   '/sitemap': {
     title: 'Sitemap | Breakthrough Tattoo \u2013 North Charleston, SC',
     description:
-      'Full sitemap for Breakthrough Tattoo — North Charleston\'s premier custom tattoo studio.',
+      'Every page on the Breakthrough Tattoo site — artists, services, gallery, booking, FAQ and contact for our North Charleston, SC tattoo studio.',
     robots: 'noindex, follow',
   },
 };
