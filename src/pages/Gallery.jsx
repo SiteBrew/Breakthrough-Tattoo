@@ -34,97 +34,24 @@ function ElfsightFeed() {
   )
 }
 
-// Setup guide shown before the widget ID is configured
-function SetupGuide() {
-  const steps = [
-    {
-      num: '1',
-      title: 'Create a free Elfsight account',
-      detail: 'Go to elfsight.com and sign up — the free plan shows up to 200 post views/month, plenty to get started.',
-      link: 'https://elfsight.com',
-      linkLabel: 'Go to Elfsight →',
-    },
-    {
-      num: '2',
-      title: 'Create an Instagram Feed widget',
-      detail: 'Click "Create Widget" → choose "Instagram Feed" → connect the @breakthroughtattoo_charleston account → choose a grid layout.',
-      link: null,
-    },
-    {
-      num: '3',
-      title: 'Copy your Widget ID',
-      detail: 'After saving, click "Add to website" → copy the script snippet. Your Widget ID looks like: elfsight-app-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
-      link: null,
-    },
-    {
-      num: '4',
-      title: 'Paste the ID into Gallery.jsx',
-      detail: 'Open src/pages/Gallery.jsx and set ELFSIGHT_WIDGET_ID to your ID (the part after "elfsight-app-"). Photos will appear instantly.',
-      link: null,
-      code: 'const ELFSIGHT_WIDGET_ID = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"',
-    },
-  ]
-
+// Shown only if the Elfsight widget ID is ever unset. This used to be a
+// step-by-step Elfsight setup guide — agency instructions, with a file path
+// and a code snippet, rendered inside the client's own public site.
+function GalleryUnavailable() {
   return (
-    <div className="max-w-3xl mx-auto">
-      {/* Hero message */}
-      <div className="text-center mb-12">
-        <div className="w-20 h-20 rounded-full border-2 border-brand-gold/40 flex items-center justify-center mx-auto mb-6 text-brand-gold">
-          <InstagramIcon size={36} />
-        </div>
-        <h2 className="font-heading text-3xl md:text-4xl font-bold text-white mb-4">
-          Connect Your <span className="gold-text">Instagram Feed</span>
-        </h2>
-        <p className="text-gray-400 leading-relaxed max-w-xl mx-auto">
-          Instagram disabled public photo embeds in 2023. To display real photos here,
-          the studio needs to connect their Instagram account through{' '}
-          <a href="https://elfsight.com" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:underline">
-            Elfsight
-          </a>{' '}
-          — a free tool that shows a live photo grid from any public Instagram profile.
-          Setup takes about 5 minutes.
-        </p>
-      </div>
-
-      {/* Steps */}
-      <div className="space-y-4">
-        {steps.map((step) => (
-          <div key={step.num} className="card-dark p-6 flex gap-5">
-            <div className="w-10 h-10 rounded-full bg-brand-gold/10 border border-brand-gold/40 flex items-center justify-center shrink-0 mt-0.5">
-              <span className="font-accent text-brand-gold font-bold text-sm">{step.num}</span>
-            </div>
-            <div className="flex-1">
-              <h3 className="font-heading text-lg font-semibold text-white mb-1">{step.title}</h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-3">{step.detail}</p>
-              {step.code && (
-                <code className="block bg-black border border-brand-border text-brand-gold text-xs px-4 py-3 font-mono leading-relaxed break-all">
-                  {step.code}
-                </code>
-              )}
-              {step.link && (
-                <a
-                  href={step.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand-gold text-xs font-semibold tracking-widest uppercase hover:text-brand-gold-light transition-colors"
-                >
-                  {step.linkLabel}
-                </a>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Alternative note */}
-      <div className="mt-8 p-6 border border-brand-gold/20 bg-brand-gold/5">
-        <p className="text-gray-400 text-sm leading-relaxed">
-          <span className="text-brand-gold font-semibold">Alternative — upload photos directly:</span>{' '}
-          If you'd prefer to skip Elfsight, the client can save photos from their Instagram,
-          drop the files into <code className="text-brand-gold bg-black px-1.5 py-0.5 text-xs">/public/gallery/</code>,
-          and we can wire the gallery to display them as a local image grid — no third-party service needed.
-        </p>
-      </div>
+    <div className="text-center py-20">
+      <p className="text-gray-400 text-sm leading-relaxed">
+        Our gallery is loading. In the meantime, see our latest work on{' '}
+        <a
+          href="https://www.instagram.com/breakthroughtattoo_charleston/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-brand-gold hover:text-brand-gold-light transition-colors"
+        >
+          Instagram
+        </a>
+        .
+      </p>
     </div>
   )
 }
@@ -216,7 +143,7 @@ export default function Gallery() {
             </>
           ) : (
             <div className="reveal opacity-0 translate-y-6 transition-all duration-700">
-              <SetupGuide />
+              <GalleryUnavailable />
             </div>
           )}
         </div>
